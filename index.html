@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruclate Portofolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="*" href="assets\fruclate_icon.ico">
 </head>
 <body class="">
-    <header class="bg-[#B17457] text-white max-w-6xl mx-auto flex justify-between items-center p-4">
+    <header class="bg-[#B17457] text-white mx-auto flex justify-between items-center p-4">
         <div class="">
-
+            <img src="/assets/fruclate_logo.svg" alt="Fruclate Logo" class="h-16 w-auto">
         </div>
-        <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Products</a>
-            <a href="">Message Us</a>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="hover:text-[#D8D2C2] transition-colors duration-200">Home</a>
+            <a href="#about" class="hover:text-[#D8D2C2] transition-colors duration-200">About</a>
+            <a href="#products" class="hover:text-[#D8D2C2] transition-colors duration-200">Products</a>
+            <a href="#message-us" class="hover:text-[#D8D2C2] transition-colors duration-200">Message Us</a>
         </nav>
+         <!-- Hamburger Menu Button (Mobile) -->
+        <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
     </header>
+
+    <!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-[#B17457] text-white">
+    <nav class="flex flex-col p-4 space-y-4">
+        <a href="#home" class="hover:text-[#D8D2C2] transition">Home</a>
+        <a href="#about" class="hover:text-[#D8D2C2] transition">About</a>
+        <a href="#products" class="hover:text-[#D8D2C2] transition">Products</a>
+        <a href="#message-us" class="hover:text-[#D8D2C2] transition">Message Us</a>
+    </nav>
+</div>
 
     <main>
         <section id="home">
@@ -35,5 +56,6 @@
     <footer class="bg-[#B17457] text-white ">
         <h1>© 2019 Copyright Denny Cahyo Widyatmoko</h1>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
