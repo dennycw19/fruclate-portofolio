@@ -5,8 +5,9 @@ welcomeUser();
 
 
 const backgrounds = [
-    'assets/blurry-man-cocoa-beans-medium-shot.jpg',
-    'assets/hand-holding-open-fruit-close-up.jpg'
+    'assets/2149142870.jpg',
+    'assets/2149142873.jpg',
+    'assets/25605.jpg'
 ];
 
 let currentIndex = 0;
